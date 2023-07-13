@@ -3,9 +3,14 @@ import { StyleSheet, Text, View } from 'react-native';
 import index from './src/index.js';
 
 
-export default function App() {
-  return ( 
-    <index />
+export default function index() {
+  return (
+    <view>
+        
+        <text>Hello World</text>
+        
+    </view>
+    
   );
 }
 
