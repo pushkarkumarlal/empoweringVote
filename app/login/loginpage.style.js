@@ -60,6 +60,7 @@ const styles=StyleSheet.create({
     buttomViewContainer:{
     flexDirection: 'column',
     },
+    
     touchRegister:{ 
     borderRadius: 15,
     height:30,
