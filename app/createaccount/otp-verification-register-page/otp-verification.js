@@ -13,7 +13,7 @@ const OtpVerification=()=>{
 
             <View style={styles.container1}>
                 <View style={styles.container1_1}>
-                    <TouchableOpacity style={styles.topHeaderArrowBackTouch}><Image style={styles.topHeaderBackArrow}source={require('../../../assets/ArrowBackTopLeft.png')}/></TouchableOpacity></View>
+                    <Link href='../phonenum/phonenum'><Image style={styles.topHeaderBackArrow}source={require('../../../assets/ArrowBackTopLeft.png')}/></Link></View>
                 
                 <View style={styles.container1_2}>
                 <Image style={styles.otpVerification} source={require('../../../assets/OtpVerification.png')}/>

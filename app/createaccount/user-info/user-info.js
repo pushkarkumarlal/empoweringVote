@@ -1,17 +1,10 @@
-import {React,useState} from "react";
+import React from "react";
 import {View,SafeAreaView,Text,Image,TouchableOpacity} from 'react-native'
 import { Link } from "expo-router";
 import { ScrollView, TextInput } from "react-native-gesture-handler";
-import styles from './phone-num.style'
+import styles from './user-info.style'
 
-
-const PhoneNumber=()=>{
-
-const [phoneNumber,setPhoneNumber]=useState("");
-
-const [areaCode,setAreaCode]=useState("");
-
-
+const UserInfo=()=>{
 
     return(
         <View style={{flex:1}}>
@@ -22,18 +15,19 @@ const [areaCode,setAreaCode]=useState("");
                     <TouchableOpacity style={styles.topHeaderArrowBackTouch}><Image style={styles.topHeaderBackArrow}source={require('../../../assets/ArrowBackTopLeft.png')}/></TouchableOpacity></View>
                 
                 <View style={styles.container1_2}>
-                <Image style={styles.createAccountImage} source={require('../../../assets/CreateAccount.png')}/>
+                <Image style={styles.otpVerification} source={require('../../../assets/OtpVerification.png')}/>
                     </View>
             </View>
            
 
             <View style={styles.container2}>
-                <View>
-                    <TextInput style={styles.input} placeholder="Mobile Number" textAlign="center"></TextInput>
-                    <TextInput style={styles.input} placeholder="Country Code" textAlign="center">
-                    </TextInput>
                 
-                </View>
+            <TextInput style={styles.input}  textAlign="center"/>
+            <TextInput style={styles.input}  textAlign="center"/>
+            <TextInput style={styles.input}  textAlign="center"/>
+            <TextInput style={styles.input}  textAlign="center"/>
+                    
+                
             </View>
 
             <View style={styles.container3}>
@@ -49,4 +43,4 @@ const [areaCode,setAreaCode]=useState("");
     )
 }
 
-export default PhoneNumber;
+export default UserInfo;
