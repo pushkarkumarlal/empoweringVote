@@ -9,6 +9,8 @@ const styles=StyleSheet.create({
     },
     container1:{
       flex:1,
+      alignItems:'center',
+      justifyContent:'center'
     },
     container2:{
     flex:1,

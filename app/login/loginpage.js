@@ -1,10 +1,11 @@
 import React from "react";
-import {View,SafeAreaView,Text,Image,TextInput,TouchableOpacity} from 'react-native'
+import {View,SafeAreaView,Text,Image,TextInput,TouchableOpacity,StatusBar} from 'react-native'
 
 import {Link} from 'expo-router'
 
 import styles from './loginpage.style'
 
+const empowerVoteLogo =require('../../assets/logos/EmpowerVote.png')
 
 const loginpage=()=>{
     const [userName, setUserName] = React.useState('');
@@ -12,8 +13,9 @@ const loginpage=()=>{
 
     return(
             <SafeAreaView style={styles.container}>
+                 <StatusBar  backgroundColor="#f0f0f0" barStyle="dark-content"/>
                 <View style={styles.container1}>
-                   
+                   <Image source={ empowerVoteLogo}></Image>
                 </View>
                 <View style={styles.container2}>
                     <View style={styles.userNameContainer}>

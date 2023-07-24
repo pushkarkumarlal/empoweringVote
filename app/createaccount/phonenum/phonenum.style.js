@@ -25,32 +25,16 @@ const styles=StyleSheet.create({
         flex: 1,
         display:'flex',
         alignItems:'center',
-        
-
-       
     },
 
     container1_1:{
         flex: 1,
         justifyContent:'center',
-        backgroundColor:'rgba(0,0,0,0.1)'
+        paddingLeft:10
     },
-    topHeaderBackArrow:{
-        marginLeft:10,
-        marginTop:10,
-        
-    },
-    topHeaderArrowBackTouch:{
-        
-        width:60,
-        height:35,
-        
-    },
-
     container1_2:{
         flex: 6,
         alignItems:'center',
-        justifyContent:'center'
        
     },
     input:{

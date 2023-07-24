@@ -5,59 +5,42 @@ const styles=StyleSheet.create({
     container:{
         flex:1,
         backgroundColor:'#FFFFFF',
-        marginTop:41,
-        
+        marginTop:41, 
     },
-
     container1:{
     flex: 1,
     justifyContent:'center',
 },
-
     container2:{
         flex:1,
-        justifyContent:"center",
-        display:'flex',
+        justifyContent:"space-evenly",
       alignItems:'center',
-      
     },
 
     container3:{
         flex: 1,
         display:'flex',
         alignItems:'center',
-        
-
-       
     },
-
     container1_1:{
         flex: 1,
-        justifyContent:'center',
-        backgroundColor:'rgba(0,0,0,0.1)'
-    },
-    topHeaderBackArrow:{
-        marginLeft:10,
-        marginTop:10,
-        
-    },
-    topHeaderArrowBackTouch:{
-        
-        width:60,
-        height:35,
-        
-    },
+        paddingLeft:10 , 
+        display: "flex",
+        justifyContent: "center",
 
+    },
+    leftArrowImage:{
+        resizeMode: 'contain'
+
+    },
     container1_2:{
         flex: 6,
         alignItems:'center',
-        justifyContent:'center'
-       
     },
     input:{
         backgroundColor:'rgba(217, 217, 217, 0.5)',
         height:55,
-        width:55,
+        width:350,
         borderRadius:5,
 
         alignSelf:'center',
@@ -71,8 +54,9 @@ const styles=StyleSheet.create({
         marginRight:15
     },
    
-    otpVerification:{
-        resizeMode:'contain'
+    details:{
+        resizeMode:'contain',
+        alignItems:'center'
     },
     
     registerButton:{
