@@ -1,8 +1,14 @@
 import {React,useState} from "react";
-import {View,SafeAreaView,Text,Image,TouchableOpacity} from 'react-native'
+import {View,SafeAreaView,Text,Image,TouchableOpacity,StatusBar} from 'react-native'
 import { Link } from "expo-router";
 import { ScrollView, TextInput } from "react-native-gesture-handler";
+
+
 import styles from './phonenum.style'
+const createAccountImage=require('../../../assets/logos/CreateAccount.png')
+const rightArrow=require('../../../assets/logos/ArrowRightSmall.png')
+const leftArrow=require('../../../assets/logos/ArrowLeftSmall.png')
+
 
 
 const PhoneNumber=()=>{
@@ -14,13 +20,14 @@ const [areaCode,setAreaCode]=useState("");
     return(
         <View style={{flex:1}}>
         <SafeAreaView style={styles.container}>
+        <StatusBar  backgroundColor="#f0f0f0" barStyle="dark-content"/>
 
             <View style={styles.container1}>
                 <View style={styles.container1_1}>
-                    <TouchableOpacity style={styles.topHeaderArrowBackTouch}><Image style={styles.topHeaderBackArrow}source={require('../../../assets/ArrowBackTopLeft.png')}/></TouchableOpacity></View>
+                <Link href='../../login/loginpage'>.<Image style={styles.topHeaderBackArrow}source={leftArrow}/></Link></View>
                 
                 <View style={styles.container1_2}>
-                <Image style={styles.createAccountImage} source={require('../../../assets/CreateAccount.png')}/>
+                <Image style={styles.createAccountImage} source={createAccountImage}/>
                     </View>
             </View>
            
@@ -36,10 +43,8 @@ const [areaCode,setAreaCode]=useState("");
 
             <View style={styles.container3}>
                 
-               <Link href='../otp-verification-register-page/otp-verification'> <Image source={require('../../../assets/ArrowBlackRight1x.png')}/></Link>
+               <Link href='../otp-verification-register-page/otp-verification'> <Image source={rightArrow}/></Link>
                 
-                
-
             </View>
 
         </SafeAreaView>

@@ -1,7 +1,11 @@
 import React from "react";
-import {View,SafeAreaView,Text,Image,TouchableOpacity} from 'react-native'
+import {View,SafeAreaView,Text,Image,TouchableOpacity,StatusBar} from 'react-native'
 import { Link } from "expo-router";
 import { ScrollView, TextInput } from "react-native-gesture-handler";
+
+const rightArrow=require('../../../assets/logos/ArrowRightSmall.png')
+const leftArrow=require('../../../assets/logos/ArrowLeftSmall.png')
+const detailsImage=require('../../../assets/logos/Details.png')
 import styles from './user-info.style'
 
 const UserInfo=()=>{
@@ -9,13 +13,17 @@ const UserInfo=()=>{
     return(
         <View style={{flex:1}}>
         <SafeAreaView style={styles.container}>
+        <StatusBar  backgroundColor="#f0f0f0" barStyle="dark-content"/>
 
             <View style={styles.container1}>
                 <View style={styles.container1_1}>
-                    <TouchableOpacity style={styles.topHeaderArrowBackTouch}><Image style={styles.topHeaderBackArrow}source={require('../../../assets/ArrowBackTopLeft.png')}/></TouchableOpacity></View>
+                <Link href={'../otp-verification-register-page/otp-verification'} >.
+                    <Image style={styles.leftArrowImage} source={leftArrow}/>
+                </Link>
+                </View>
                 
                 <View style={styles.container1_2}>
-                <Image style={styles.otpVerification} source={require('../../../assets/OtpVerification.png')}/>
+                <Image style={styles.details} source={detailsImage}/>
                     </View>
             </View>
            
@@ -32,7 +40,7 @@ const UserInfo=()=>{
 
             <View style={styles.container3}>
                 
-               <Link href='/otp-verification'> <Image source={require('../../../assets/ArrowBlackRight1x.png')}/></Link>
+               <Link href='/otp-verification'> <Image source={rightArrow}/></Link>
                 
                 
 
