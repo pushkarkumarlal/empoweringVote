@@ -3,8 +3,6 @@ import {View,SafeAreaView,Text,Image,TextInput,TouchableOpacity} from 'react-nat
 
 import {Link} from 'expo-router'
 
-import topimage from '../../assets/loginPageTop.png'
-
 import styles from './loginpage.style'
 
 
@@ -15,7 +13,7 @@ const loginpage=()=>{
     return(
             <SafeAreaView style={styles.container}>
                 <View style={styles.container1}>
-                    <Image source={topimage} style={styles.imageStyle}/>
+                   
                 </View>
                 <View style={styles.container2}>
                     <View style={styles.userNameContainer}>
@@ -40,7 +38,7 @@ const loginpage=()=>{
                     </View>
                     <View style={styles.registerContainer}>
                         <TouchableOpacity>
-                            <Text style={styles.register}><Link href='../createaccount/register'>Register</Link></Text>
+                            <Text style={styles.register}><Link href='../createaccount/phonenum/phonenum'>Register</Link></Text>
                             <View style={styles.touchRegister}></View>
                         </TouchableOpacity>
                         <TouchableOpacity>
